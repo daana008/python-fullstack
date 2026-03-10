@@ -10,3 +10,9 @@ ls -al
 ```
 docker compose up
 ```
+5. åpne en ny terminal
+6. execute mariadb serveren
+```
+docker exec -it mariadb_container mariadb -u root -p
+```
+
