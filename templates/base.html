@@ -1,0 +1,23 @@
+<!-- funnet på github -->
+<!DOCTYPE html>
+<html lang="no">
+<!-- blanding av github og egen kode-->
+<head>
+    <meta charset="UTF-8">
+    <title>{% block tittel %}Min Flask-app{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<!-- funnet på github men editta av meg selv-->
+<body>
+
+<nav>
+    <a href="/">Forside</a>
+</nav>
+
+<main>
+{% block innhold %}{% endblock %}
+</main>
+
+
+</body>
+</html>

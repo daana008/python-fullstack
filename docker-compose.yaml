@@ -1,0 +1,21 @@
+# kode fant jeg på youtube men er litt forandret av egen kode
+version: '3.8'
+
+services:
+  mysql: 
+    image: mariadb:latest
+    container_name: mariadb_container
+    environment:
+      MARIADB_ROOT_PASSWORD: 123456789
+    volumes:
+      - mariadb_volume:/var/lib/mysql
+    networks:
+      - mariadb_network
+    ports:
+      - "3307:3306"
+
+volumes:
+  mariadb_volume:
+
+networks:
+  mariadb_network:

@@ -1,0 +1,33 @@
+<!-- basen fant jeg på gtthub men jeg har endrett liott selv med egen kode og chatgpt-->
+
+{% extends "base.html" %}
+
+{% block innhold %}
+
+<h1>Last opp fil</h1>
+
+<form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <button type="submit">Last opp</button>
+</form>
+
+<h2>Filer i databasen</h2>
+
+<ul>
+{% for fil in filer %}
+    <li>
+        {{ fil[0] }}
+        <a href="/download/{{ fil[0] }}">Download</a>
+        <form action="/delete/{{ fil[0] }}" method="POST" style="display:inline;">
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}
+
+
+Important part:
+
+enctype="multipart/form-data"
