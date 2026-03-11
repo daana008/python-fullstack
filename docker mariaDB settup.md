@@ -1,4 +1,7 @@
 # python-fullstack Docker Mariadb server Tutorial
+## prosjekt beskrivelse 
+i dette prosjekte lager jeg en server som lagrer filer og en nettside som lar deg sette dem inn. du kan også laste ned filene som er satt inn eller slette dem, men etter 7 dager slettes de automatisk. det er også mulig å sende serveren til noen andre takket være docker
+
 i denne tutorialen skal jeg gå frem de nødvendige stegene du må gjøre til å aktivere og sette opp mariadbe servern din. (nb du må ha kopiert docker koden over) 
 1. åpne terminalen
 2. naviger til filen du har satt docker koden i
