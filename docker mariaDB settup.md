@@ -15,4 +15,32 @@ docker compose up
 ```
 docker exec -it mariadb_container mariadb -u root -p
 ```
+7. skriv inn passorded ditt
+8.   lag dattabasen din
+```
+CREATE DATABASER prosjekter
+```
+9. GÅ INN OG BRUK DATABASEN
+```
+USE PROSJEKTER
+```
+10. lag filene hvor informtionen blir lagret
+```
+CREATE TABLE files (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  filename VARCHAR(255),
+  filepath VARCHAR(255),
+  filesize INT,
+  uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+11. sjekk at de fungerer ved å sette in en av filene dine
+    * først kopier inn dette. INSERT INTO files (filename, filepath, filesize)
+    * så følg opp med å skrive inn informationen til filene dine
+    * så tast dette ; og trykk enter
+
+
+
+
+
 
